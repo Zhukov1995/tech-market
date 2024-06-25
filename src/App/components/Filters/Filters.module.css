@@ -1,0 +1,20 @@
+.filter_container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 15px 20px;
+}
+
+.filter_select {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media(max-width:600px) {
+    .filter_container {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,43 @@
+.header {
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.title_title {
+    font-size: 50px;
+}
+
+.title_subtitle {
+    color: rgb(109, 109, 109);
+}
+
+.header a {
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff7c1d;
+    border: 1px solid #ff7c1d;
+}
+
+.header a:hover {
+    background-color: transparent;
+}
+
+@media(max-width: 500px) {
+    .title_title {
+        font-size: 40px;
+    }
+}

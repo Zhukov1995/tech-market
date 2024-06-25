@@ -1,0 +1,54 @@
+.form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.form input, textarea {
+    padding: 5px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #FF9933;
+    border-radius: 5px;
+    resize: none;
+    position: relative;
+}
+
+.button_group {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+
+.success {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(39, 253, 89, 0.758);
+    color: white;
+    font-size: 13px;
+}
+
+.failed {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #e05a48;
+    color: white;
+    font-size: 13px;
+}
+
+@media(max-width: 500px) {
+  .form {
+    width: 360px;
+  }
+}
