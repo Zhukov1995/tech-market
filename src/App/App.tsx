@@ -7,7 +7,6 @@ import CatalogPage from './pages/CatalogPage/CatalogPage';
 import { Route, Routes } from 'react-router-dom';
 import AllWidgetPage from './pages/AllWidgetPage/AllWidgetPage';
 import WidgetPage from './pages/WidgetPage/WidgetPage';
-import { useAppSelector } from './store/hooks';
 
 function App() {
 
