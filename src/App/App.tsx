@@ -7,6 +7,7 @@ import CatalogPage from './pages/CatalogPage/CatalogPage';
 import { Route, Routes } from 'react-router-dom';
 import AllWidgetPage from './pages/AllWidgetPage/AllWidgetPage';
 import WidgetPage from './pages/WidgetPage/WidgetPage';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/catalog" element={<CatalogPage />} />
         <Route path="/widgets" element={<AllWidgetPage />} />
         <Route path="/widget" element={<WidgetPage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
 
