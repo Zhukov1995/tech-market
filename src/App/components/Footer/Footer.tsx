@@ -3,7 +3,9 @@ import styles from './Footer.module.css';
 
 const Footer = () => {
     return (
-        <footer className={styles.footer}></footer>
+        <footer className={styles.footer}>
+            © 2021 «Techpeople» — внедрение BI систем.
+        </footer>
     )
 }
 
