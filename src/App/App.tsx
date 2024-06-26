@@ -18,7 +18,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/catalog" element={<CatalogPage />} />
         <Route path="/widgets" element={<AllWidgetPage />} />
-        <Route path="/widget" element={<WidgetPage />} />
+        <Route path="/widget/:widgetId" element={<WidgetPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

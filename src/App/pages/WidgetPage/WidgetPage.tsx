@@ -5,20 +5,21 @@ import Modal from "../../components/Modal/Modal";
 import SliderCatalogItem from "../../components/SliderCatalogItem/SliderCatalogItem";
 import { useAppSelector } from "../../store/hooks";
 import { IWidget } from "../../store/data";
+import { useParams } from "react-router-dom";
 
 const WidgetPage = () => {
     const [isModal, setIsModal] = useState<boolean>(false);
     const [isSliderModal, setIsSliderModal] = useState<boolean>(false);
     const [widget, setWidget] = useState<IWidget>();
     const widgets = useAppSelector(state => state.widgets.widgets);
-    const activeId = useAppSelector(state => state.widgets.activeWidgetId);
+    const { widgetId } = useParams();
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
     useEffect(() => {
-        const targetWidget = widgets.filter(el => el.id === activeId)[0];
+        const targetWidget = widgets.filter(el => el.id === Number(widgetId))[0];
         setWidget(targetWidget);
     }, []);
 
